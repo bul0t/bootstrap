@@ -61,10 +61,18 @@
                 <h1><div class="display-2">Bitrix-developer</div></h1>
                 <div class="fs-2 fw-light text-muted">HTML, CSS, JavaScript, PHP, MySQL</div>
                 <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+                <a href="#pricing" class="btn btn-secondary btn-lg mb-3">Buy Now</a>
+                <!-- open sidebar / offcanvas -->
+                <a class="d-block" href="#sidebar"
+                    data-bs-toggle="offcanvas">
+                    Читать все скилы
+                </a>
             </div> <!-- col -->
             <div class="col-md-5 text-center d-none d-md-block">
-                <img class="img-fluid" src="img/bmw.jpg" alt="BMW" />
+                <!-- tooltip -->
+                <span class="tt" data-bs-placement="bottom" title="Программист Иванов И.И.">
+                    <img class="img-fluid" src="img/bmw.jpg" alt="BMW" />
+                </span>
             </div> <!-- col -->
         </div> <!-- row -->
     </div> <!-- container -->
@@ -239,6 +247,39 @@
     </div>
 </section>
 
+<!-- nav-tabs -->
+<section>
+    <div class="container">
+        <nav>
+            <div class="nav nav-tabs">
+                <button class="nav-link active" type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-html">HTML</button>
+                <button class="nav-link" type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-css">CSS</button>
+                <button class="nav-link" type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-javascript">JavaScript</button>
+            </div>
+            <div class="tab-content">
+                <div id="nav-html" class="tab-pane fade show active p-3">
+                    <h2>HTML</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, laboriosam quo enim voluptatibus, possimus dolore, itaque nihil aliquam necessitatibus atque neque eum tempora reiciendis.</p>
+                </div>
+                <div id="nav-css" class="tab-pane fade p-3">
+                    <h2>CSS</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, laboriosam quo enim voluptatibus, possimus dolore, itaque nihil aliquam necessitatibus atque neque eum tempora reiciendis.</p>
+                </div>
+                <div id="nav-javascript" class="tab-pane fade p-3">
+                    <h2>JavaScript</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, laboriosam quo enim voluptatibus, possimus dolore, itaque nihil aliquam necessitatibus atque neque eum tempora reiciendis.</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
 <!-- contact form -->
 <section id="contact">
     <div class="container">
@@ -246,7 +287,7 @@
             <h2>Отправить заявку</h2>
             <div class="lead">Остались вопросы? Заполните форму контактов и отправьте...</div>
         </div>
-        <div class="row justify-content-center my-5">
+        <div class="row justify-content-center mt-5">
             <div class="col-lg-6">
                 <form action="#">
                     <label class="form-label" for="email">Email:</label>
@@ -255,6 +296,12 @@
                             <i class="bi bi-envelope"></i>
                         </span>
                         <input id="email" class="form-control" type="email" placeholder="Введите емаил..." />
+                        <!-- tooltip -->
+                        <span class="input-group-text">
+                            <span class="tt" data-bs-placement="top" title="Введите свой Е-маил!">
+                                <i class="bi bi-question-circle text-muted"></i>
+                            </span>
+                        </span>
                     </div>
 
                     <label class="form-label" for="name">Name:</label>
@@ -263,6 +310,12 @@
                             <i class="bi bi-person"></i>
                         </span>
                         <input id="name" class="form-control" type="text" placeholder="Введите имя..." />
+                        <!-- tooltip -->
+                        <span class="input-group-text">
+                            <span class="tt" data-bs-placement="top" title="Введите своё имя!">
+                                <i class="bi bi-question-circle text-muted"></i>
+                            </span>
+                        </span>
                     </div>
 
                     <label class="form-label" for="subject">Какую услугу хотите заказать?</label>
@@ -292,6 +345,69 @@
 </section>
 
 <!-- get updates / modal trigger -->
+<section class="bg-light">
+    <div class="container">
+        <div class="text-center">
+            <h2>Заголовок</h2>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <p class="text-muted my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quos itaque accusantium voluptatum debitis ut. Atque fugiat, magni ratione eum ipsum illum nostrum quibusdam.</p>
+                <button class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#reg-modal">
+                    Модальное окно
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- modal itself -->
+<div id="reg-modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="modal-title" class="modal-title">Заголовок модального окна</h5>
+                <button class="btn-close"
+                    data-bs-dismiss="modal"
+                    type="button"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sit, ut architecto possimus est autem reiciendis esse error, neque quasi deleniti nisi assumenda blanditiis.</p>
+                <label class="form-label" for="modal-email">Ваш емаил адрес:</label>
+                <input id="modal-email" type="email" class="form-control" placeholder="mail@mail.ru" />
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Мои скилы</h5>
+        <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dignissimos unde sint modi excepturi. Aliquid error hic odit et incidunt aspernatur ratione provident ullam!</p>
+        <!-- dropdown -->
+        <div class="dropdown">
+        <button class="dropdown-toggle btn btn-secondary" type="button"
+            data-bs-toggle="dropdown">
+            Подробнее
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">HTML</a></li>
+            <li><a class="dropdown-item" href="#">CSS</a></li>
+            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+        </ul>
+    </div>
+    </div>
+</div>
 
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
     <script src="common.js"></script>
