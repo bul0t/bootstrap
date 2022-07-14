@@ -1,7 +1,50 @@
 # Navbar
 Адаптивное меню: https://getbootstrap.com/docs/5.2/components/navbar/. Многое можно изменять: цвет, элементы, положение и мн.др.
 
-Контейнер обычно помещают внутрь тега `nav`:
+- navbar - класс меню
+- navbar-expand-md - означает что меню схлопнется на размере `md`, можно поставить `lg` и т.д.
+- nav.navbar.navbar-expand-lg.bg-dark.navbar-dark - пример для темного меню со светлым текстом
+- bg-dark или bg-primary - цвет фона
+- navbar-dark - светлый текст
+- fixed-top - закрепляем меню сверху, также нужно сделать отступ сверху
+- .container - контейнер обычно помещают внутрь тега `nav`
+
+Отступ сверху при фиксированном меню:
+
+    body::before {
+        display: block;
+        content: '';
+        height: 56px;
+    }
+
+Простой пример меню:
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Brand</a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar-main">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-main">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+Еще пример:
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-md bg-light">
@@ -35,5 +78,3 @@
             </div>
         </div>
     </nav>
-
-В `nav` можно поместить класс `navbar-dark bg-primary` чтобы изменить фон меню или добавить класс `fixed-bottom` чтобы зафиксировать меню снизу.

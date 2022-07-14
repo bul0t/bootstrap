@@ -5,47 +5,32 @@ https://getbootstrap.com/docs/5.2/components/accordion/
 
     <div class="accordion" id="chapters">
         <div class="accordion-item">
-            <h2 class="accordion-header" id="heading-1">
+            <h2 class="accordion-header">
                 <button class="accordion-button" type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#chapter-1">
-                    Frontend
+                    Вопрос 1
                 </button>
             </h2>
             <div id="chapter-1" class="accordion-collapse collapse show"
                 data-bs-parent="#chapters">
                 <div class="accordion-body">
-                    <p class="mb-0">HTML, CSS, JavaScript, jQuery, Bootstrap</p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ratione officia mollitia laborum vitae rerum officiis enim ea dolor. Quos natus iste veniam nisi?
                 </div>
             </div>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header" id="heading-2">
-                <button class="accordion-button" type="button"
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#chapter-2">
-                    Backend
+                    Вопрос 2
                 </button>
             </h2>
             <div id="chapter-2" class="accordion-collapse collapse"
                 data-bs-parent="#chapters">
                 <div class="accordion-body">
-                    <p class="mb-0">PHP, MySQL, Bitrix Framework</p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="heading-3">
-                <button class="accordion-button" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#chapter-3">
-                    Soft skill
-                </button>
-            </h2>
-            <div id="chapter-3" class="accordion-collapse collapse"
-                data-bs-parent="#chapters">
-                <div class="accordion-body">
-                    <p class="mb-0">Photoshop, Figma, Git, SEO</p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio labore mollitia velit totam, consequuntur perferendis numquam incidunt a natus. Dolor blanditiis quam repellat cupiditate?
                 </div>
             </div>
         </div>

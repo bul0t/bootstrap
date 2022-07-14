@@ -1,5 +1,8 @@
 # Icons
-Иконки Bootstrap: https://icons.getbootstrap.com
+Иконки Bootstrap: https://icons.getbootstrap.com  
+Скачать внизу страницы
+
+    <i class="bi bi-terminal"></i>
 
 ## CDN
 

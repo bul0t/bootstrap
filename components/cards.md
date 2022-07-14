@@ -1,6 +1,21 @@
 # Cards
 Компонент карт: https://getbootstrap.com/docs/5.2/components/card/
 
+Простой пример:
+
+    <div class="card bg-dark text-light mb-3 mb-md-0">
+        <div class="card-body">
+            <div class="h3 mb-3">
+                <i class="bi bi-people"></i>
+            </div>
+            <h3 class="card-title mb-3">In person</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusantium deleniti laborum vitae rem ab.</p>
+            <a href="#" class="btn btn-primary mb-3">Read more</a>
+        </div>
+    </div>
+
+Еще пример:
+
     <div class="col-9 col-lg-4 mb-3 mb-lg-0">
         <div class="card border border-2 border-primary">
             <div class="card-header text-center text-primary">Самое выгодное</div>
