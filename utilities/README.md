@@ -1,24 +1,28 @@
 # Utilities
-Служебные классы помогающе в разработке: https://getbootstrap.com/docs/5.2/utilities/api/
-
-## Margin
-https://getbootstrap.com/docs/5.2/utilities/spacing/
-- `m-*` - где * от 1 до 5
-- `mx-*` - отступ справа слева
-- `my-*` - отступ сверху снизу
-
-## Padding
-https://getbootstrap.com/docs/5.2/utilities/spacing/
-- `p-*` - где * от 1 до 5
-
-## Border
-https://getbootstrap.com/docs/5.2/utilities/borders/
-- `border`
-- `border-*` - толщина обводки от 1 до 5
-
-## Shadows
-- `hadow-sm` - малая тень
-
-## Font
-https://getbootstrap.com/docs/5.2/utilities/text/
-- `fw-bold` - жирный шрифт
+Включает в себя классы:
+- Background - цвет фона: `bg-success`
+- Borders - рамки у элементов: `border`
+- Colors - цвет текста: `text-success`
+- Display - управление отображением: `d-block`
+- Flex - флексбокс: `d-flex`
+- Float - обтекание: `float-start`
+- Interactions - способ взаимодействия: `user-select-all` и `pe-none`
+- Opacity - прозрачность: `opacity-75`
+- Overflow - управление переполнением: `overflow-scroll`
+- Position - позиционирование: `position-relative`
+- Shadows - тень: `shadow-sm`
+- Sizing - ширина, высота, вьюпорт: `w-25`
+- Spacing - padding, margin, gap
+- Text
+    - text alignment,
+    - text wrapping and overflow,
+    - word break,
+    - text-transform,
+    - font-size,
+    - font-weight and font-style
+    - line-height
+    - monospace
+    - reset color
+    - text-decoration
+- Vertical alignment - вертикальное выравнивание inline, inline-block, inline-table, table cell
+- Visibility - видимость элемнта: `visible`

@@ -1,7 +1,4 @@
 # Colors
-Классы для работы с цветом: https://getbootstrap.com/docs/5.2/utilities/colors/
+Классы для работы с цветом текста: `text-success`.
 
-    .text-light
-    .text-dark
-    .text-body
-    .text-muted
+    <div class="text-success"> 1 </div>

@@ -1,5 +1,16 @@
 # Text
-Работа с текстом: https://getbootstrap.com/docs/5.2/utilities/text/
+Классы для работы с текстом: https://getbootstrap.com/docs/5.2/utilities/text/
+
+- text alignment,
+- text wrapping and overflow,
+- word break,
+- text-transform,
+- font-size,
+- font-weight and font-style
+- line-height
+- monospace
+- reset color
+- text-decoration
 
 ## Text alignment
 
